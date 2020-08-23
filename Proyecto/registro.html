@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <h1> <img src="./imagenes/logo.svg" alt="Logo" height="50"> TuServicio.com</h1>
+        <h2>Te reparamos el computador</h2>
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./servicios.html">Servicios</a></li>
+            <li><a href="./contacto.html">Contáctenos</a></li>
+            <li><a href="./inicio_sesion.html">Inicio de Sesión</a></li>
+            <li>Registro</li>
+        </ul>
+        <hr>
+    </header>
+    <!-- main -->
+    <main>
+        <h2>Registro</h2>
+        <form>
+            <fieldset>
+                <legend>Nuevo usuario</legend>
+                <label for="email">Email*</label>
+                <br>
+                <input type="email" name="email" id="email" required>
+                <br><br>
+                <label for="contrasena">Contraseña*</label>
+                <br>
+                <input type="password" name="contrasena" id="contrasena" required>
+                <br><br>
+                <label for="confirmacion">Confitmación de contraseña*</label>
+                <br>
+                <input type="tel" name="confirmacion" id="confirmacion" required>
+                <br><br>
+                <label for="info">Donde nos vió:</label>
+                <br>
+                <input type="radio" name="radio_google" id="radio_google">
+                <label for="radio_google">Google</label>
+                <input type="radio" name="radio_otro" id="radio_otro">
+                <label for="radio_otro">Otro</label>
+                <br><br>
+                Comentario*
+                <br>
+                <textarea name="comentario" id=comentario"" cols="30" rows="10" required></textarea>
+                <br><br>
+                <input type="checkbox" name="acepta_terminos" id="acepta_terminos" required>
+                <label for="acepta_terminos"> Acepta términos y condiciones*</label>
+                <br><br>
+                <input type="datetime-local" id="meeting-time" id="d">
+                <input type="submit" value="continuar">
+            </fieldset>
+        </form>
+    </main>
+    <!-- footer -->
+        <label for="">Recuerde que debe ser mayor que el dia de hoy </label>
+        <script type="text/javascript">
+        var d = new Date;
+        document.write(d.getFullYear()+"-"+d.getMonth()+"-"+d.getDate());
+        </script>
+        <input type="datetime-local" id="meeting-time" id="d">
+ 
+    <footer>
+        <hr>
+        Derechos Reservados
+    </footer>
+</body>
+
+</html>
